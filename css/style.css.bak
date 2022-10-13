@@ -302,6 +302,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*
+    ==============
+    icons
+    ==============
+*/
 
 .socicon-modelmayhem:before {
   content: "\e000";
