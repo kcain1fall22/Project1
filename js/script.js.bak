@@ -785,9 +785,7 @@
             }    
         }
     }
-
-    // Functions from plugins for
-    // compatible with old projects 
+ 
     function setActiveCarouselItem(card){
        var $target = $(card).find('.carousel-item:first');
        $target.addClass('active');

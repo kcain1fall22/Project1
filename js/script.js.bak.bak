@@ -145,12 +145,12 @@
 
         $('html').addClass($.isMobile() ? 'mobile' : 'desktop');
 
-        // .cid-KJC-navbar--sticky
+        // .kjc-navbar--sticky
         $(window).scroll(function() {
-            $('.cid-KJC-navbar--sticky').each(function() {
+            $('.kjc-navbar--sticky').each(function() {
                 var method = $(window).scrollTop() > 10 ? 'addClass' : 'removeClass';
-                $(this)[method]('cid-KJC-navbar--stuck')
-                    .not('.cid-KJC-navbar--open')[method]('cid-KJC-navbar--short');
+                $(this)[method]('kjc-navbar--stuck')
+                    .not('.kjc-navbar--open')[method]('kjc-navbar--short');
             });
         });
 
@@ -162,28 +162,28 @@
                     var windowHeight = $(window).height();
                     if ($.inArray(windowHeight, deviceSize) < 0)
                         windowHeight = deviceSize[$(window).width() > windowHeight ? 1 : 0];
-                    $('.cid-KJC-section--full-height').css('height', windowHeight + 'px');
+                    $('.kjc-section--full-height').css('height', windowHeight + 'px');
                 });
             })($(window).width(), $(window).height());
-        } else if (!isSupportViewportUnits) { // fallback for .cid-KJC-section--full-height
+        } else if (!isSupportViewportUnits) { // fallback for .kjc-section--full-height
             $(window).smartresize(function() {
-                $('.cid-KJC-section--full-height').css('height', $(window).height() + 'px');
+                $('.kjc-section--full-height').css('height', $(window).height() + 'px');
             });
             $(document).on('add.cards', function(event) {
-                if ($('html').hasClass('cid-KJC-site-loaded') && $(event.target).outerFind('.cid-KJC-section--full-height').length)
+                if ($('html').hasClass('kjc-site-loaded') && $(event.target).outerFind('.kjc-section--full-height').length)
                     $(window).resize();
             });
         }
 
-        // .cid-KJC-section--16by9 (16 by 9 blocks autoheight)
+        // .kjc-section--16by9 (16 by 9 blocks autoheight)
         function calculate16by9() {
             $(this).css('height', $(this).parent().width() * 9 / 16);
         }
         $(window).smartresize(function() {
-            $('.cid-KJC-section--16by9').each(calculate16by9);
+            $('.kjc-section--16by9').each(calculate16by9);
         });
         $(document).on('add.cards changeParameter.cards', function(event) {
-            var enabled = $(event.target).outerFind('.cid-KJC-section--16by9');
+            var enabled = $(event.target).outerFind('.kjc-section--16by9');
             if (enabled.length) {
                 enabled
                     .attr('data-16by9', 'true')
@@ -195,10 +195,10 @@
             }
         });
 
-        // .cid-KJC-parallax-background
+        // .kjc-parallax-background
         function initParallax(card) {
             setTimeout(function() {
-                $(card).outerFind('.cid-KJC-parallax-background')
+                $(card).outerFind('.kjc-parallax-background')
                     .jarallax({
                         speed: 0.6
                     })
@@ -213,7 +213,7 @@
         if ($.fn.jarallax && !$.isMobile()) {
             $(window).on('update.parallax', function(event) {
                 setTimeout(function() {
-                    var $jarallax = $('.cid-KJC-parallax-background');
+                    var $jarallax = $('.kjc-parallax-background');
 
                     $jarallax.jarallax('coverImage');
                     $jarallax.jarallax('clipContainer');
@@ -261,7 +261,7 @@
             });
         }
 
-        // .cid-KJC-fixed-top
+        // .kjc-fixed-top
         var fixedTopTimeout, scrollTimeout, prevScrollTop = 0,
             fixedTop = null,
             isDesktop = !$.isMobile();
@@ -297,7 +297,7 @@
                     fixedTop.fixed = false;
                     $(fixedTop.elm).removeClass('is-fixed');
                 }
-                $('.cid-KJC-fixed-top:first').each(function() {
+                $('.kjc-fixed-top:first').each(function() {
                     fixedTop = {
                         breakPoint: $(this).offset().top + $(this).height() * 3,
                         fixed: false,
@@ -310,7 +310,7 @@
 
         // embedded videos
         $(window).smartresize(function() {
-            $('.cid-KJC-embedded-video').each(function() {
+            $('.kjc-embedded-video').each(function() {
                 $(this).height(
                     $(this).width() *
                     parseInt($(this).attr('height') || 315) /
@@ -319,7 +319,7 @@
             });
         });
         $(document).on('add.cards', function(event) {
-            if ($('html').hasClass('cid-KJC-site-loaded') && $(event.target).outerFind('iframe').length)
+            if ($('html').hasClass('kjc-site-loaded') && $(event.target).outerFind('iframe').length)
                 $(window).resize();
         });
 
@@ -329,7 +329,7 @@
                 var videoURL = $(this).attr('data-bg-video');
                 var parsedUrl = videoURL.match(/(http:\/\/|https:\/\/|)?(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(&\S+)?/);
 
-                var $img = $('<div class="cid-KJC-background-video-preview">')
+                var $img = $('<div class="kjc-background-video-preview">')
                     .hide()
                     .css({
                         backgroundSize: 'cover',
@@ -369,7 +369,7 @@
                         }).attr('src', previewURL);
 
                         if ($.fn.YTPlayer && !isBuilder && !$.isMobile()) {
-                            $('> *:eq(1)', this).before('<div class="cid-KJC-background-video"></div>').prev()
+                            $('> *:eq(1)', this).before('<div class="kjc-background-video"></div>').prev()
                                 .YTPlayer({
                                     videoURL: parsedUrl[6],
                                     containment: 'self',
@@ -397,7 +397,7 @@
                         request = null;
 
                         if ($.fn.vimeo_player && !isBuilder && !$.isMobile()) {
-                            $('> *:eq(1)', this).before('<div class="cid-KJC-background-video"></div>').prev()
+                            $('> *:eq(1)', this).before('<div class="kjc-background-video"></div>').prev()
                                 .vimeo_player({
                                     videoURL: videoURL,
                                     containment: 'self',
@@ -425,14 +425,14 @@
             if (paramName === 'bg') {
                 switch (key) {
                     case 'type':
-                        $(event.target).find('.cid-KJC-background-video-preview').remove();
+                        $(event.target).find('.kjc-background-video-preview').remove();
                         if (value.type === 'video') {
                             videoParser(event.target);
                         }
                         break;
                     case 'value':
                         if (value.type === 'video') {
-                            $(event.target).find('.cid-KJC-background-video-preview').remove();
+                            $(event.target).find('.kjc-background-video-preview').remove();
                             videoParser(event.target);
                         }
                         break;
@@ -444,7 +444,7 @@
         if (!isBuilder) {
             $('body > *:not(style, script)').trigger('add.cards');
         }
-        $('html').addClass('cid-KJC-site-loaded');
+        $('html').addClass('kjc-site-loaded');
         $(window).resize().scroll();
 
         // smooth scroll
@@ -462,7 +462,7 @@
                             $(useBody ? 'body' : target.hash).each(function() {
                                 e.preventDefault();
                                 // in css sticky navbar has height 64px
-                                // var stickyMenuHeight = $('.cid-KJC-navbar--sticky').length ? 64 : 0;
+                                // var stickyMenuHeight = $('.kjc-navbar--sticky').length ? 64 : 0;
                                 var stickyMenuHeight = $(target).parents().hasClass('navbar-fixed-top') ? 60 : 0;
                                 var goTo = target.hash == '#bottom' ? ($(this).height() - $(window).height()) : ($(this).offset().top - stickyMenuHeight);
                                 // Disable Accordion's and Tab's scroll
@@ -483,7 +483,7 @@
         }
 
         // init the same height columns
-        $('.cols-same-height .cid-KJC-figure').each(function() {
+        $('.cols-same-height .kjc-figure').each(function() {
             var $imageCont = $(this);
             var $img = $imageCont.children('img');
             var $cont = $imageCont.parent();
@@ -534,10 +534,10 @@
 
 
     if (!isBuilder) {
-        // .cid-KJC-social-likes
+        // .kjc-social-likes
         if ($.fn.socialLikes) {
             $(document).on('add.cards', function(event) {
-                $(event.target).outerFind('.cid-KJC-social-likes').on('counter.social-likes', function(event, service, counter) {
+                $(event.target).outerFind('.kjc-social-likes').on('counter.social-likes', function(event, service, counter) {
                     if (counter > 999) $('.social-likes__counter', event.target).html(Math.floor(counter / 1000) + 'k');
                 }).socialLikes({
                     initHtml: false
@@ -546,7 +546,7 @@
         }
 
         $(document).on('add.cards', function(event) {
-            if ($(event.target).hasClass('cid-KJC-reveal')) {
+            if ($(event.target).hasClass('kjc-reveal')) {
                 $(event.target).footerReveal();
             }
         });
@@ -559,8 +559,8 @@
             } else if ($('input[name=animation]').length) {
                 $('input[name=animation]').remove();
 
-                var $animatedElements = $('p, h1, h2, h3, h4, h5, a, button, small, img, li, blockquote, .cid-KJC-author-name, em, label, input, textarea, .input-group, .iconbox, .btn-social, .cid-KJC-figure, .cid-KJC-map, .cid-KJC-testimonial .card-block, .cid-KJC-price-value, .cid-KJC-price-figure, .dataTable, .dataTables_info').not(function() {
-                    return $(this).parents().is('.navbar, .cid-KJC-arrow, footer, .iconbox, .cid-KJC-slider, .cid-KJC-gallery, .cid-KJC-testimonial .card-block, #cookiesdirective, .cid-KJC-wowslider, .accordion, .tab-content, .engine, #scrollToTop');
+                var $animatedElements = $('p, h1, h2, h3, h4, h5, a, button, small, img, li, blockquote, .kjc-author-name, em, label, input, textarea, .input-group, .iconbox, .btn-social, .kjc-figure, .kjc-map, .kjc-testimonial .card-block, .kjc-price-value, .kjc-price-figure, .dataTable, .dataTables_info').not(function() {
+                    return $(this).parents().is('.navbar, .kjc-arrow, footer, .iconbox, .kjc-slider, .kjc-gallery, .kjc-testimonial .card-block, #cookiesdirective, .kjc-wowslider, .accordion, .tab-content, .engine, #scrollToTop');
                 }).addClass('hidden animated');
 
                 function getElementOffset(element) {
@@ -614,7 +614,7 @@
 
     // Scroll to Top Button
     $(document).ready(function() {
-        if ($('.cid-KJC-arrow-up').length) {
+        if ($('.kjc-arrow-up').length) {
             var $scroller = $('#scrollToTop'),
                 $main = $('body,html'),
                 $window = $(window);
@@ -637,7 +637,7 @@
 
     // arrow down
     if (!isBuilder) {
-        $('.cid-KJC-arrow').on('click', function(e) {
+        $('.kjc-arrow').on('click', function(e) {
             var $next = $(e.target).closest('section').next();
             if($next.hasClass('engine')){
                 $next = $next.closest('section').next();
@@ -652,7 +652,7 @@
     // add padding to the first element, if it exists
     if ($('nav.navbar').length) {
         var navHeight = $('nav.navbar').height();
-        $('.cid-KJC-after-navbar.cid-KJC-fullscreen').css('padding-top', navHeight + 'px');
+        $('.kjc-after-navbar.kjc-fullscreen').css('padding-top', navHeight + 'px');
     }
 
     function isIE() {
@@ -671,7 +671,7 @@
         $(document).on('add.cards', function(event) {
             var $eventTarget = $(event.target);
 
-            if ($eventTarget.hasClass('cid-KJC-fullscreen')) {
+            if ($eventTarget.hasClass('kjc-fullscreen')) {
                 $(window).on('load resize', function() {
                     $eventTarget.css('height', 'auto');
 
@@ -681,13 +681,13 @@
                 });
             }
 
-            if ($eventTarget.hasClass('cid-KJC-slider') || $eventTarget.hasClass('cid-KJC-gallery')) {
+            if ($eventTarget.hasClass('kjc-slider') || $eventTarget.hasClass('kjc-gallery')) {
                 $eventTarget.find('.carousel-indicators').addClass('ie-fix').find('li').css({
                     display: 'inline-block',
                     width: '30px'
                 });
 
-                if ($eventTarget.hasClass('cid-KJC-slider')) {
+                if ($eventTarget.hasClass('kjc-slider')) {
                     $eventTarget.find('.full-screen .slider-fullscreen-image').css('height', '1px');
                 }
             }
@@ -785,7 +785,9 @@
             }    
         }
     }
- 
+
+    // Functions from plugins for
+    // compatible with old projects 
     function setActiveCarouselItem(card){
        var $target = $(card).find('.carousel-item:first');
        $target.addClass('active');
@@ -945,20 +947,20 @@
                 if (!$iscollapsing.hasClass('collapsing')) {
                     if ($id.indexOf('toggle') != -1){
                         if ($(this).hasClass('collapsed')) {
-                            $(this).find('span.sign').removeClass('cid-KJC-arrow-down').addClass('cid-KJC-arrow-up'); 
+                            $(this).find('span.sign').removeClass('kjc-arrow-down').addClass('kjc-arrow-up'); 
                         }
                         else{
-                            $(this).find('span.sign').removeClass('cid-KJC-arrow-up').addClass('cid-KJC-arrow-down'); 
+                            $(this).find('span.sign').removeClass('kjc-arrow-up').addClass('kjc-arrow-down'); 
                         }
                     }
                     else if ($id.indexOf('accordion')!=-1) {
                         var $accordion =  $(this).closest('.accordionStyles ');
                     
                         $accordion.children('.card').each(function() {
-                            $(this).find('span.sign').removeClass('cid-KJC-arrow-up').addClass('cid-KJC-arrow-down'); 
+                            $(this).find('span.sign').removeClass('kjc-arrow-up').addClass('kjc-arrow-down'); 
                         });
                         if ($(this).hasClass('collapsed')) {
-                            $(this).find('span.sign').removeClass('cid-KJC-arrow-down').addClass('cid-KJC-arrow-up'); 
+                            $(this).find('span.sign').removeClass('kjc-arrow-down').addClass('kjc-arrow-up'); 
                         }
                     }
                 }
@@ -970,8 +972,8 @@
         }
         
         // Fix for slider bug
-        if($('.cid-KJC-slider.carousel').length!=0){
-            $('.cid-KJC-slider.carousel').each(function(){
+        if($('.kjc-slider.carousel').length!=0){
+            $('.kjc-slider.carousel').each(function(){
                 var $slider = $(this),
                     controls = $slider.find('.carousel-control'),
                     indicators = $slider.find('carousel-indicators li');
