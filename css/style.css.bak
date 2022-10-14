@@ -2506,7 +2506,7 @@ body {
 .cid-r6dBdHvMVY {
   padding-top: 120px;
   padding-bottom: 75px;
-  background-image: url("../../../assets/images/bg-yellow-2000x871.png");
+  background-image: url("images/Background.jpg");
 }
 @media (min-width: 992px) {
   .cid-r6dBdHvMVY .kjc-figure {
@@ -2557,7 +2557,6 @@ body {
 .cid-r6dEWXqEwT {
   padding-top: 90px;
   padding-bottom: 90px;
-  /*background-image: url("../../../assets/images/cardsbg-1-1920x1440.jpg");*/
   background-color:#FFF;
 }
 .cid-r6dEWXqEwT h1 {
@@ -3272,7 +3271,7 @@ body {
 .cid-r6iPOeQb9Q {
   padding-top: 135px;
   padding-bottom: 45px;
-  background-image: url("../../../assets/images/bg-yellow-2000x871.png");
+  background-image: url("images/Background.jpg");
 }
 .cid-r6iPOeQb9Q H1 {
   color: #000e6e;
