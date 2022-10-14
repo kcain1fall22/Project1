@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="description" content="">
-  <title>Home</title
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css">
   
   
   
@@ -28,7 +29,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="#top">
-                        <img src="images/magicyugioh.jpg" alt="Trading Cards Monthly" title="Trading Cards Monthly" style="height: 8rem;">
+                        <img src="images/magicyugioh.jpg" alt="Trading cards" title="Trading Cards" style="height: 8rem;">
                     </a>
                 </span>
                 
@@ -37,7 +38,6 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
                     <a class="nav-link link text-black display-4" href="index.html">HOME&nbsp;&nbsp;&nbsp;</a>
-                </li><li class="nav-item"><a class="nav-link link text-black display-4" href="index.html#toggle2-g">FAQ&nbsp;&nbsp;&nbsp;</a></li><li class="nav-item">
                     <a class="nav-link link text-black display-4" href="index.html#header9-3">Tell Me More &nbsp;&nbsp;&nbsp;</a>
                 </li></ul>
                 <div class="navbar-buttons kjc-section-btn"><a class="btn btn-sm btn-primary display-4" href="signup.php"><span class="kjc-delivery kjc-iconfont kjc-iconfont-btn"></span>
@@ -50,7 +50,7 @@
     <div class="container">
         <div class="media-container-row">
             <div class="kjc-figure" style="width: 100%;">
-                <img src="images/box.jpg" alt="Trading Card Box" title="">
+             <img src="images/cards.jpeg" alt="Cards" title="Trading Card Boxes">
             </div>
 
             <div class="media-content">
@@ -76,7 +76,7 @@
     <div class="container">
         <div class="inner-container" style="width: 66%;">
             <hr class="line" style="width: 25%;">
-            <div class="section-text align-center kjc-white kjc-fonts-style display-5">Trading Cards Monthly will deliver directly to your door every month! &nbsp;We'll include factory sealed packs of cards, Rare finds worth their value.</div>
+            <div class="section-text align-center kjc-white kjc-fonts-style display-5">Trading Card Boxes will deliver directly to your door every month! &nbsp;We'll include factory sealed packs of cards, Rare finds worth their value.</div>
             <hr class="line" style="width: 25%;">
         </div>
     </div>
@@ -151,7 +151,7 @@
             </div>
             <div class="row row-copirayt">
                 <p class="kjc-text mb-0 kjc-fonts-style kjc-white align-center display-7">
-                    © Copyright 2022 Trading Cards Monthly - All Rights Reserved
+                    © Copyright 2022 Trading Card Boxes - All Rights Reserved
                 </p>
             </div>
         </div>
@@ -160,15 +160,15 @@
 
 
   <script src="js/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/dropdown/js/script.min.js"></script>
-  <script src="assets/parallax/jarallax.min.js"></script>
-  <script src="assets/kjc-switch-arrow/kjc-switch-arrow.js"></script>
-  <script src="assets/sociallikes/social-likes.js"></script>
-  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="assets/theme/js/script.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/kjc-switch-arrow.js"></script>
+  <script src="js/social-likes.js"></script>
+  <script src="js/jquery.touch-swipe.min.js"></script>
+  <script src="js/script.js"></script>
   
   
 </body>

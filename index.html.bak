@@ -124,30 +124,7 @@
                         <a class="text-white kjc-bold" href="signup.php" target="_blank">Subscribe</a>
                     </li></ul>
             </div>
-            <div class="row social-row">
-                <div class="social-list align-right pb-2">
-                    
-                    
-                    
-                    
-                    
-                    
-                        <div class="soc-item">
-                                <a href="https://facebook.com" target="_blank">
-                                    <span class="socicon-facebook socicon kjc-iconfont kjc-iconfont-social"></span>
-                                </a>
-                        </div><div class="soc-item">
-                                <a href="https://twitter.com" target="_blank">
-                                    <span class="socicon-twitter socicon kjc-iconfont kjc-iconfont-social"></span>
-                                </a>
-                        </div><div class="soc-item">
-                                <a href="https://www.instagram.com" target="_blank">
-                                    <span class="socicon-instagram socicon kjc-iconfont kjc-iconfont-social"></span>
-                                </a>
-                         </div>
-                    </div>
-                    
-                 </div>
+        
             </div>
             <div class="row row-copirayt">
                 <p class="kjc-text mb-0 kjc-fonts-style kjc-white align-center display-7">
