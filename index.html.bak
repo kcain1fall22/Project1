@@ -28,7 +28,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="#top">
-                        <img src="images/magicyugioh.jpg" alt="Trading Cards Monthly" title="Trading Cards Monthly" style="height: 8rem;">
+                        <img src="images/magicyugioh.jpg" alt="Trading Card Boxes!" title="Trading Cards Boxes!" style="height: 8rem;">
                     </a>
                 </span>
                 
@@ -58,7 +58,7 @@
                 
                 <div class="kjc-section-text kjc-white pb-3 ">
                     <p class="kjc-text kjc-fonts-style display-5">
-                        Trading Cards box is a monthly subscription service that delivers sealed packs of trading cards to your Doorstep!
+                        Trading Cards box is a monthly! subscription service that delivers sealed packs of trading cards to your Doorstep!
                     </p>
                 </div>
                 <div class="kjc-section-btn"><a class="btn btn-md btn-primary display-4" href="index.html#header9-3">LEARN MORE</a>
@@ -76,7 +76,7 @@
     <div class="container">
         <div class="inner-container" style="width: 66%;">
             <hr class="line" style="width: 25%;">
-            <div class="section-text align-center kjc-white kjc-fonts-style display-5">Trading Cards Monthly will deliver directly to your door every month! &nbsp;We'll include factory sealed packs of cards, Rare finds worth their value.</div>
+            <div class="section-text align-center kjc-white kjc-fonts-style display-5">Trading Cards Boxes! will deliver directly to your door every month! &nbsp;We'll include factory sealed packs of cards, Rare finds worth their value.</div>
             <hr class="line" style="width: 25%;">
         </div>
     </div>
@@ -151,7 +151,7 @@
             </div>
             <div class="row row-copirayt">
                 <p class="kjc-text mb-0 kjc-fonts-style kjc-white align-center display-7">
-                    © Copyright 2022 Trading Cards Monthly - All Rights Reserved
+                    © Copyright 2022 Trading Card Box - All Rights Reserved
                 </p>
             </div>
         </div>
