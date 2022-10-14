@@ -28,7 +28,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="#top">
-                        <img src="images/magic.yugioh.jpeg" alt="Trading Cards Monthly" title="Trading Cards Monthly" style="height: 8rem;">
+                        <img src="assets/images/placeholder.png" alt="Trading Cards Monthly" title="Trading Cards Monthly" style="height: 8rem;">
                     </a>
                 </span>
                 
@@ -50,7 +50,7 @@
     <div class="container">
         <div class="media-container-row">
             <div class="kjc-figure" style="width: 100%;">
-                <img src="images/placeholder.jpeg" alt="Trading Card Box" title="">
+                <img src="assets/images/placeholder.jpeg" alt="Trading Card Box" title="">
             </div>
 
             <div class="media-content">
