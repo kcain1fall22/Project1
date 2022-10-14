@@ -289,7 +289,7 @@ figure {
   margin-bottom: 0; }
 
 body {
-  color: #232323; }
+  color: #149dcc; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
@@ -1468,7 +1468,7 @@ pre {
   position: relative;
   border: 2px solid #c0a375;
   border-color: #149dcc;
-  color: #232323;
+  color: #149dcc;
   cursor: pointer;
 }
 .btn-social i {
@@ -2611,7 +2611,7 @@ body {
   color: #767676;
 }
 .cid-r6dVcSL35T .kjc-section-subtitle {
-  color: #232323;
+  color: #149dcc;
   font-weight: 300;
 }
 .cid-r6dVcSL35T .toggle-content {
@@ -2820,7 +2820,7 @@ body {
 }
 .cid-r6ElDItMx2 .price-figure {
   font-weight: 700;
-  color: #232323;
+  color: #149dcc;
 }
 .cid-r6ElDItMx2 .price-value {
   font-weight: 700;
