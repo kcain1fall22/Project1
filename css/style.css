@@ -7,7 +7,7 @@
   top: 0;
   transition: all 0.45s ease;
   z-index: 1030;
-  background: #282828; }
+  background: #149dcc; }
   .navbar-dropdown .navbar-logo {
     margin-right: 0.8rem;
     transition: margin 0.3s ease-in-out;
@@ -60,9 +60,9 @@
     display: inline-block;
     vertical-align: middle;
     width: 16px;
-    -webkit-box-shadow: 0 -6px 0 1px #282828,0 0 0 1px #282828,0 6px 0 1px #282828;
-    -moz-box-shadow: 0 -6px 0 1px #282828,0 0 0 1px #282828,0 6px 0 1px #282828;
-    box-shadow: 0 -6px 0 1px #282828,0 0 0 1px #282828,0 6px 0 1px #282828; }
+    -webkit-box-shadow: 0 -6px 0 1px #149dcc,0 0 0 1px #149dcc,0 6px 0 1px #149dcc;
+    -moz-box-shadow: 0 -6px 0 1px #149dcc,0 0 0 1px #149dcc,0 6px 0 1px #149dcc;
+    box-shadow: 0 -6px 0 1px #149dcc,0 0 0 1px #149dcc,0 6px 0 1px #149dcc; }
 
 .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]::after {
   border-bottom: 0.35em solid transparent;
@@ -175,7 +175,7 @@
     -webkit-transform: translateX(0);
     transition: all 0.25s ease-out;
     -webkit-transition: all 0.25s ease-out;
-    background: #282828; }
+    background: #149dcc; }
   .nav-dropdown-sm.collapsing[aria-expanded="false"] {
     transform: translateX(-100%);
     -ms-transform: translateX(-100%);
