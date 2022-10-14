@@ -15,7 +15,7 @@
     .navbar-dropdown .navbar-logo img {
       height: 3.125rem;
       transition: all 0.3s ease-in-out; }
-    .navbar-dropdown .navbar-logo.kjc-iconfont {
+    .navbar-dropdown .navbar-logo.cid-KJC-iconfont {
       font-size: 3.125rem;
       line-height: 3.125rem; }
   .navbar-dropdown .navbar-caption {
@@ -26,7 +26,7 @@
     .navbar-dropdown .navbar-caption, .navbar-dropdown .navbar-caption:hover {
       color: inherit;
       text-decoration: none; }
-  .navbar-dropdown .kjc-iconfont + .navbar-caption {
+  .navbar-dropdown .cid-KJC-iconfont + .navbar-caption {
     vertical-align: -1px; }
   .navbar-dropdown.navbar-fixed-top {
     position: fixed; }
@@ -45,10 +45,10 @@
     margin-right: 0.5rem; }
     .navbar-dropdown.navbar-short .navbar-logo img {
       height: 2.375rem; }
-    .navbar-dropdown.navbar-short .navbar-logo.kjc-iconfont {
+    .navbar-dropdown.navbar-short .navbar-logo.cid-KJC-iconfont {
       font-size: 2.375rem;
       line-height: 2.375rem; }
-  .navbar-dropdown.navbar-short .kjc-table-cell {
+  .navbar-dropdown.navbar-short .cid-KJC-table-cell {
     height: 3.625rem; }
   .navbar-dropdown .navbar-close {
     left: 0.6875rem;
@@ -272,7 +272,7 @@ section,
   position: relative;
   word-wrap: break-word; }
 
-a.kjc-iconfont:hover {
+a.cid-KJC-iconfont:hover {
   text-decoration: none; }
 
 .article .lead p, .article .lead ul, .article .lead ol, .article .lead pre, .article .lead blockquote {
@@ -321,8 +321,8 @@ section {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover; }
-  section .kjc-background-video,
-  section .kjc-background-video-preview {
+  section .cid-KJC-background-video,
+  section .cid-KJC-background-video-preview {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -332,20 +332,20 @@ section {
 .hidden {
   visibility: hidden; }
 
-.kjc-z-index20 {
+.cid-KJC-z-index20 {
   z-index: 20; }
 
 /*! Base colors */
-.kjc-white {
+.cid-KJC-white {
   color: #ffffff; }
 
-.kjc-black {
+.cid-KJC-black {
   color: #000000; }
 
-.kjc-bg-white {
+.cid-KJC-bg-white {
   background-color: #ffffff; }
 
-.kjc-bg-black {
+.cid-KJC-bg-black {
   background-color: #000000; }
 
 /*! Text-aligns */
@@ -359,19 +359,19 @@ section {
   text-align: right; }
 
 @media (max-width: 767px) {
-  .align-left, .align-center, .align-right, .kjc-section-btn, .kjc-section-title {
+  .align-left, .align-center, .align-right, .cid-KJC-section-btn, .cid-KJC-section-title {
     text-align: center; } }
 /*! Font-weight  */
-.kjc-light {
+.cid-KJC-light {
   font-weight: 300; }
 
-.kjc-regular {
+.cid-KJC-regular {
   font-weight: 400; }
 
-.kjc-semibold {
+.cid-KJC-semibold {
   font-weight: 500; }
 
-.kjc-bold {
+.cid-KJC-bold {
   font-weight: 700; }
 
 /*! Media  */
@@ -438,10 +438,10 @@ section {
 figure {
   overflow: hidden; }
 
-figure[kjc-media-size] {
+figure[cid-KJC-media-size] {
   transition: width 0.1s; }
 
-.kjc-figure img, .kjc-figure iframe {
+.cid-KJC-figure img, .cid-KJC-figure iframe {
   display: block;
   width: 100%; }
 
@@ -457,7 +457,7 @@ figure[kjc-media-size] {
   max-width: 100%;
   margin: 0 auto; }
 
-.kjc-figure {
+.cid-KJC-figure {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   -webkit-align-self: center;
@@ -466,7 +466,7 @@ figure[kjc-media-size] {
 .media-container > div {
   max-width: 100%; }
 
-.kjc-figure img, .card-img img {
+.cid-KJC-figure img, .card-img img {
   width: 100%; }
 
 @media (max-width: 991px) {
@@ -476,43 +476,43 @@ figure[kjc-media-size] {
   .media {
     width: auto; }
 
-  .kjc-figure {
+  .cid-KJC-figure {
     width: 100% !important; } }
 /*! Buttons */
-.kjc-section-btn {
+.cid-KJC-section-btn {
   margin-left: -.25rem;
   margin-right: -.25rem;
   font-size: 0; }
 
-nav .kjc-section-btn {
+nav .cid-KJC-section-btn {
   margin-left: 0rem;
   margin-right: 0rem; }
 
 /*! Btn icon margin */
-.btn .kjc-iconfont, .btn.btn-sm .kjc-iconfont {
+.btn .cid-KJC-iconfont, .btn.btn-sm .cid-KJC-iconfont {
   cursor: pointer;
   margin-right: 0.5rem; }
 
-.btn.btn-md .kjc-iconfont, .btn.btn-md .kjc-iconfont {
+.btn.btn-md .cid-KJC-iconfont, .btn.btn-md .cid-KJC-iconfont {
   margin-right: 0.8rem; }
 
-.kjc-regular {
+.cid-KJC-regular {
   font-weight: 400; }
 
-.kjc-semibold {
+.cid-KJC-semibold {
   font-weight: 500; }
 
-.kjc-bold {
+.cid-KJC-bold {
   font-weight: 700; }
 
 [type="submit"] {
   -webkit-appearance: none; }
 
 /*! Full-screen */
-.kjc-fullscreen .kjc-overlay {
+.cid-KJC-fullscreen .cid-KJC-overlay {
   min-height: 100vh; }
 
-.kjc-fullscreen {
+.cid-KJC-fullscreen {
   display: flex;
   display: -webkit-flex;
   display: -moz-flex;
@@ -540,7 +540,7 @@ nav .kjc-section-btn {
   font-weight: normal; }
 
 /*! Scroll to top arrow */
-.kjc-arrow-up {
+.cid-KJC-arrow-up {
   bottom: 25px;
   right: 90px;
   position: fixed;
@@ -551,7 +551,7 @@ nav .kjc-section-btn {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg); }
 
-.kjc-arrow-up a {
+.cid-KJC-arrow-up a {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   color: #fff;
@@ -564,16 +564,16 @@ nav .kjc-section-btn {
   transition: all .3s ease-in-out;
   cursor: pointer;
   text-align: center; }
-  .kjc-arrow-up a:hover {
+  .cid-KJC-arrow-up a:hover {
     background-color: rgba(0, 0, 0, 0.4); }
-  .kjc-arrow-up a i {
+  .cid-KJC-arrow-up a i {
     line-height: 60px; }
 
-.kjc-arrow-up-icon {
+.cid-KJC-arrow-up-icon {
   display: block;
   color: #fff; }
 
-.kjc-arrow-up-icon::before {
+.cid-KJC-arrow-up-icon::before {
   content: "\203a";
   display: inline-block;
   font-family: serif;
@@ -587,7 +587,7 @@ nav .kjc-section-btn {
   transform: rotate(-90deg); }
 
 /*! Arrow Down */
-.kjc-arrow {
+.cid-KJC-arrow {
   position: absolute;
   bottom: 45px;
   left: 50%;
@@ -598,13 +598,13 @@ nav .kjc-section-btn {
   border-radius: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }
-  .kjc-arrow > a {
+  .cid-KJC-arrow > a {
     display: inline-block;
     text-decoration: none;
     outline-style: none;
     -webkit-animation: arrowdown 1.7s ease-in-out infinite;
     animation: arrowdown 1.7s ease-in-out infinite; }
-    .kjc-arrow > a > i {
+    .cid-KJC-arrow > a > i {
       position: absolute;
       top: -2px;
       left: 15px;
@@ -631,7 +631,7 @@ nav .kjc-section-btn {
     transform: translateY(0px);
     -webkit-transform: translateY(0px); } }
 @media (max-width: 500px) {
-  .kjc-arrow-up {
+  .cid-KJC-arrow-up {
     left: 50%;
     right: auto;
     transform: translateX(-50%) rotate(180deg);
@@ -697,14 +697,14 @@ body {
   font-style: normal;
   line-height: 1.5;
 }
-.kjc-section-title {
+.cid-KJC-section-title {
   font-style: normal;
   line-height: 1.2;
 }
-.kjc-section-subtitle {
+.cid-KJC-section-subtitle {
   line-height: 1.3;
 }
-.kjc-text {
+.cid-KJC-text {
   font-style: normal;
   line-height: 1.6;
 }
@@ -712,35 +712,35 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 4.25rem;
 }
-.display-1 > .kjc-iconfont {
+.display-1 > .cid-KJC-iconfont {
   font-size: 6.8rem;
 }
 .display-2 {
   font-family: 'Rubik', sans-serif;
   font-size: 3rem;
 }
-.display-2 > .kjc-iconfont {
+.display-2 > .cid-KJC-iconfont {
   font-size: 4.8rem;
 }
 .display-4 {
   font-family: 'Anton', sans-serif;
   font-size: 1.5rem;
 }
-.display-4 > .kjc-iconfont {
+.display-4 > .cid-KJC-iconfont {
   font-size: 2.4rem;
 }
 .display-5 {
   font-family: 'Rubik', sans-serif;
   font-size: 1.5rem;
 }
-.display-5 > .kjc-iconfont {
+.display-5 > .cid-KJC-iconfont {
   font-size: 2.4rem;
 }
 .display-7 {
   font-family: 'Rubik', sans-serif;
   font-size: 1rem;
 }
-.display-7 > .kjc-iconfont {
+.display-7 > .cid-KJC-iconfont {
   font-size: 1.6rem;
 }
 /* ---- Fluid typography for mobile devices ---- */
@@ -1220,27 +1220,27 @@ a.text-black:focus {
 .alert-danger {
   background-color: #b1a374;
 }
-.kjc-section-btn a.btn:not(.btn-form) {
+.cid-KJC-section-btn a.btn:not(.btn-form) {
   border-radius: 100px;
 }
-.kjc-section-btn a.btn:not(.btn-form):hover,
-.kjc-section-btn a.btn:not(.btn-form):focus {
+.cid-KJC-section-btn a.btn:not(.btn-form):hover,
+.cid-KJC-section-btn a.btn:not(.btn-form):focus {
   box-shadow: none !important;
 }
-.kjc-section-btn a.btn:not(.btn-form):hover,
-.kjc-section-btn a.btn:not(.btn-form):focus {
+.cid-KJC-section-btn a.btn:not(.btn-form):hover,
+.cid-KJC-section-btn a.btn:not(.btn-form):focus {
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2) !important;
   -webkit-box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2) !important;
 }
-.kjc-gallery-filter li a {
+.cid-KJC-gallery-filter li a {
   border-radius: 100px !important;
 }
-.kjc-gallery-filter li.active .btn {
+.cid-KJC-gallery-filter li.active .btn {
   background-color: #149dcc;
   border-color: #149dcc;
   color: #ffffff;
 }
-.kjc-gallery-filter li.active .btn:focus {
+.cid-KJC-gallery-filter li.active .btn:focus {
   box-shadow: none;
 }
 .nav-tabs .nav-link {
@@ -1256,24 +1256,24 @@ a,
 a:hover {
   color: #149dcc;
 }
-.kjc-plan-header.bg-primary .kjc-plan-subtitle,
-.kjc-plan-header.bg-primary .kjc-plan-price-desc {
+.cid-KJC-plan-header.bg-primary .cid-KJC-plan-subtitle,
+.cid-KJC-plan-header.bg-primary .cid-KJC-plan-price-desc {
   color: #b4e6f8;
 }
-.kjc-plan-header.bg-success .kjc-plan-subtitle,
-.kjc-plan-header.bg-success .kjc-plan-price-desc {
+.cid-KJC-plan-header.bg-success .cid-KJC-plan-subtitle,
+.cid-KJC-plan-header.bg-success .cid-KJC-plan-price-desc {
   color: #ffffff;
 }
-.kjc-plan-header.bg-info .kjc-plan-subtitle,
-.kjc-plan-header.bg-info .kjc-plan-price-desc {
+.cid-KJC-plan-header.bg-info .cid-KJC-plan-subtitle,
+.cid-KJC-plan-header.bg-info .cid-KJC-plan-price-desc {
   color: #beb8b2;
 }
-.kjc-plan-header.bg-warning .kjc-plan-subtitle,
-.kjc-plan-header.bg-warning .kjc-plan-price-desc {
+.cid-KJC-plan-header.bg-warning .cid-KJC-plan-subtitle,
+.cid-KJC-plan-header.bg-warning .cid-KJC-plan-price-desc {
   color: #ced6d8;
 }
-.kjc-plan-header.bg-danger .kjc-plan-subtitle,
-.kjc-plan-header.bg-danger .kjc-plan-price-desc {
+.cid-KJC-plan-header.bg-danger .cid-KJC-plan-subtitle,
+.cid-KJC-plan-header.bg-danger .cid-KJC-plan-price-desc {
   color: #dfd9c6;
 }
 /* Scroll to top button*/
@@ -1306,11 +1306,11 @@ a:hover {
 .note-check a[data-value=Rubik] {
   font-style: normal;
 }
-.kjc-arrow a {
+.cid-KJC-arrow a {
   color: #ffffff;
 }
 @media (max-width: 767px) {
-  .kjc-arrow {
+  .cid-KJC-arrow {
     display: none;
   }
 }
@@ -1353,7 +1353,7 @@ a:hover {
   min-height: 3.5em;
   padding: 1.07em .5em;
 }
-.form-control > .kjc-iconfont {
+.form-control > .cid-KJC-iconfont {
   font-size: 1.6rem;
 }
 .form-control,
@@ -1363,7 +1363,7 @@ a:hover {
 .form-active .form-control:invalid {
   border-color: red;
 }
-.kjc-overlay {
+.cid-KJC-overlay {
   background-color: #000;
   bottom: 0;
   left: 0;
@@ -1401,25 +1401,25 @@ pre {
   -webkit-user-drag: none;
   user-drag: none;
 }
-.kjc-section__comments .row {
+.cid-KJC-section__comments .row {
   justify-content: center;
   -webkit-justify-content: center;
 }
 /* Forms */
-.kjc-form .btn {
+.cid-KJC-form .btn {
   margin: .4rem 0;
 }
-.kjc-form .input-group-btn a.btn {
+.cid-KJC-form .input-group-btn a.btn {
   border-radius: 100px !important;
 }
-.kjc-form .input-group-btn a.btn:hover {
+.cid-KJC-form .input-group-btn a.btn:hover {
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
 }
-.kjc-form .input-group-btn button[type="submit"] {
+.cid-KJC-form .input-group-btn button[type="submit"] {
   border-radius: 100px !important;
   padding: 1rem 3rem;
 }
-.kjc-form .input-group-btn button[type="submit"]:hover {
+.cid-KJC-form .input-group-btn button[type="submit"]:hover {
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
 }
 .form2 .form-control {
@@ -1452,7 +1452,7 @@ pre {
   .btn {
     font-size: .75rem !important;
   }
-  .btn .kjc-iconfont {
+  .btn .cid-KJC-iconfont {
     font-size: 1rem !important;
   }
 }
@@ -1484,12 +1484,12 @@ pre {
   margin-left: .1rem;
 }
 /* Footer */
-.kjc-footer-content li::before,
-.kjc-footer .kjc-contacts li::before {
+.cid-KJC-footer-content li::before,
+.cid-KJC-footer .cid-KJC-contacts li::before {
   background: #149dcc;
 }
-.kjc-footer-content li a:hover,
-.kjc-footer .kjc-contacts li a:hover {
+.cid-KJC-footer-content li a:hover,
+.cid-KJC-footer .cid-KJC-contacts li a:hover {
   color: #149dcc;
 }
 .footer3 input[type="email"],
@@ -2065,48 +2065,48 @@ body {
 .dropup .dropdown-toggle::after {
   display: none;
 }
-.cid-KJC .navbar {
+.cid-cid-KJC .navbar {
   background: #55b4d4;
   transition: none;
   min-height: 77px;
   padding: .5rem 0;
 }
-.cid-KJC .navbar-dropdown.bg-color.transparent.opened {
+.cid-cid-KJC .navbar-dropdown.bg-color.transparent.opened {
   background: #55b4d4;
 }
-.cid-KJC a {
+.cid-cid-KJC a {
   font-style: normal;
 }
-.cid-KJC .nav-item span {
+.cid-cid-KJC .nav-item span {
   padding-right: 0.4em;
   line-height: 0.5em;
   vertical-align: text-bottom;
   position: relative;
   text-decoration: none;
 }
-.cid-KJC .nav-item a {
+.cid-cid-KJC .nav-item a {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.7rem 0 !important;
   margin: 0rem .65rem !important;
 }
-.cid-KJC .nav-item:focus,
-.cid-KJC .nav-link:focus {
+.cid-cid-KJC .nav-item:focus,
+.cid-cid-KJC .nav-link:focus {
   outline: none;
 }
-.cid-KJC .btn {
+.cid-cid-KJC .btn {
   padding: 0.4rem 1.5rem;
   display: inline-flex;
   align-items: center;
 }
-.cid-KJC .btn .kjc-iconfont {
+.cid-cid-KJC .btn .cid-KJC-iconfont {
   font-size: 1.6rem;
 }
-.cid-KJC .menu-logo {
+.cid-cid-KJC .menu-logo {
   margin-right: auto;
 }
-.cid-KJC .menu-logo .navbar-brand {
+.cid-cid-KJC .menu-logo .navbar-brand {
   display: flex;
   margin-left: 5rem;
   padding: 0;
@@ -2114,7 +2114,7 @@ body {
   min-height: 3.8rem;
   align-items: center;
 }
-.cid-KJC .menu-logo .navbar-brand .navbar-caption-wrap {
+.cid-cid-KJC .menu-logo .navbar-brand .navbar-caption-wrap {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
@@ -2122,40 +2122,40 @@ body {
   min-width: 7rem;
   margin: .3rem 0;
 }
-.cid-KJC .menu-logo .navbar-brand .navbar-caption-wrap .navbar-caption {
+.cid-cid-KJC .menu-logo .navbar-brand .navbar-caption-wrap .navbar-caption {
   line-height: 1.2rem !important;
   padding-right: 2rem;
 }
-.cid-KJC .menu-logo .navbar-brand .navbar-logo {
+.cid-cid-KJC .menu-logo .navbar-brand .navbar-logo {
   font-size: 4rem;
   transition: font-size 0.25s;
 }
-.cid-KJC .menu-logo .navbar-brand .navbar-logo img {
+.cid-cid-KJC .menu-logo .navbar-brand .navbar-logo img {
   display: flex;
 }
-.cid-KJC .menu-logo .navbar-brand .navbar-logo .kjc-iconfont {
+.cid-cid-KJC .menu-logo .navbar-brand .navbar-logo .cid-KJC-iconfont {
   transition: font-size 0.25s;
 }
-.cid-KJC .navbar-toggleable-sm .navbar-collapse {
+.cid-cid-KJC .navbar-toggleable-sm .navbar-collapse {
   justify-content: flex-end;
   -webkit-justify-content: flex-end;
   padding-right: 5rem;
   width: auto;
 }
-.cid-KJC .navbar-toggleable-sm .navbar-collapse .navbar-nav {
+.cid-cid-KJC .navbar-toggleable-sm .navbar-collapse .navbar-nav {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   padding-left: 0;
 }
-.cid-KJC .navbar-toggleable-sm .navbar-collapse .navbar-nav .nav-item {
+.cid-cid-KJC .navbar-toggleable-sm .navbar-collapse .navbar-nav .nav-item {
   -webkit-align-self: center;
   align-self: center;
 }
-.cid-KJC .navbar-toggleable-sm .navbar-collapse .navbar-buttons {
+.cid-cid-KJC .navbar-toggleable-sm .navbar-collapse .navbar-buttons {
   padding-left: 0;
   padding-bottom: 0;
 }
-.cid-KJC .dropdown .dropdown-menu {
+.cid-cid-KJC .dropdown .dropdown-menu {
   background: #ffffff;
   display: none;
   position: absolute;
@@ -2164,20 +2164,20 @@ body {
   padding-bottom: 1.4rem;
   text-align: left;
 }
-.cid-KJC .dropdown .dropdown-menu .dropdown-item {
+.cid-cid-KJC .dropdown .dropdown-menu .dropdown-item {
   width: auto;
   padding: 0.235em 1.5385em 0.235em 1.5385em !important;
 }
-.cid-KJC .dropdown .dropdown-menu .dropdown-item::after {
+.cid-cid-KJC .dropdown .dropdown-menu .dropdown-item::after {
   right: 0.5rem;
 }
-.cid-KJC .dropdown .dropdown-menu .dropdown-submenu {
+.cid-cid-KJC .dropdown .dropdown-menu .dropdown-submenu {
   margin: 0;
 }
-.cid-KJC .dropdown.open > .dropdown-menu {
+.cid-cid-KJC .dropdown.open > .dropdown-menu {
   display: block;
 }
-.cid-KJC .navbar-toggleable-sm.opened:after {
+.cid-cid-KJC .navbar-toggleable-sm.opened:after {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -2189,28 +2189,28 @@ body {
   -webkit-transform: translateY(100%);
   z-index: 1000;
 }
-.cid-KJC .navbar.navbar-short {
+.cid-cid-KJC .navbar.navbar-short {
   min-height: 60px;
   transition: all .2s;
 }
-.cid-KJC .navbar.navbar-short .navbar-toggler-right {
+.cid-cid-KJC .navbar.navbar-short .navbar-toggler-right {
   top: 20px;
 }
-.cid-KJC .navbar.navbar-short .navbar-logo a {
+.cid-cid-KJC .navbar.navbar-short .navbar-logo a {
   font-size: 2.5rem !important;
   line-height: 2.5rem;
   transition: font-size 0.25s;
 }
-.cid-KJC .navbar.navbar-short .navbar-logo a .kjc-iconfont {
+.cid-cid-KJC .navbar.navbar-short .navbar-logo a .cid-KJC-iconfont {
   font-size: 2.5rem !important;
 }
-.cid-KJC .navbar.navbar-short .navbar-logo a img {
+.cid-cid-KJC .navbar.navbar-short .navbar-logo a img {
   height: 3rem !important;
 }
-.cid-KJC .navbar.navbar-short .navbar-brand {
+.cid-cid-KJC .navbar.navbar-short .navbar-brand {
   min-height: 3rem;
 }
-.cid-KJC button.navbar-toggler {
+.cid-cid-KJC button.navbar-toggler {
   width: 31px;
   height: 18px;
   cursor: pointer;
@@ -2218,10 +2218,10 @@ body {
   top: 1.5rem;
   right: 1rem;
 }
-.cid-KJC button.navbar-toggler:focus {
+.cid-cid-KJC button.navbar-toggler:focus {
   outline: none;
 }
-.cid-KJC button.navbar-toggler .hamburger span {
+.cid-cid-KJC button.navbar-toggler .hamburger span {
   position: absolute;
   right: 0;
   width: 30px;
@@ -2229,88 +2229,88 @@ body {
   border-right: 5px;
   background-color: #333333;
 }
-.cid-KJC button.navbar-toggler .hamburger span:nth-child(1) {
+.cid-cid-KJC button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
   transition: all .2s;
 }
-.cid-KJC button.navbar-toggler .hamburger span:nth-child(2) {
+.cid-cid-KJC button.navbar-toggler .hamburger span:nth-child(2) {
   top: 8px;
   transition: all .15s;
 }
-.cid-KJC button.navbar-toggler .hamburger span:nth-child(3) {
+.cid-cid-KJC button.navbar-toggler .hamburger span:nth-child(3) {
   top: 8px;
   transition: all .15s;
 }
-.cid-KJC button.navbar-toggler .hamburger span:nth-child(4) {
+.cid-cid-KJC button.navbar-toggler .hamburger span:nth-child(4) {
   top: 16px;
   transition: all .2s;
 }
-.cid-KJC nav.opened .hamburger span:nth-child(1) {
+.cid-cid-KJC nav.opened .hamburger span:nth-child(1) {
   top: 8px;
   width: 0;
   opacity: 0;
   right: 50%;
   transition: all .2s;
 }
-.cid-KJC nav.opened .hamburger span:nth-child(2) {
+.cid-cid-KJC nav.opened .hamburger span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   transition: all .25s;
 }
-.cid-KJC nav.opened .hamburger span:nth-child(3) {
+.cid-cid-KJC nav.opened .hamburger span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   transition: all .25s;
 }
-.cid-KJC nav.opened .hamburger span:nth-child(4) {
+.cid-cid-KJC nav.opened .hamburger span:nth-child(4) {
   top: 8px;
   width: 0;
   opacity: 0;
   right: 50%;
   transition: all .2s;
 }
-.cid-KJC .collapsed.navbar-expand {
+.cid-cid-KJC .collapsed.navbar-expand {
   flex-direction: column;
 }
-.cid-KJC .collapsed .btn {
+.cid-cid-KJC .collapsed .btn {
   display: flex;
 }
-.cid-KJC .collapsed .navbar-collapse {
+.cid-cid-KJC .collapsed .navbar-collapse {
   display: none !important;
   padding-right: 0 !important;
 }
-.cid-KJC .collapsed .navbar-collapse.collapsing,
-.cid-KJC .collapsed .navbar-collapse.show {
+.cid-cid-KJC .collapsed .navbar-collapse.collapsing,
+.cid-cid-KJC .collapsed .navbar-collapse.show {
   display: block !important;
 }
-.cid-KJC .collapsed .navbar-collapse.collapsing .navbar-nav,
-.cid-KJC .collapsed .navbar-collapse.show .navbar-nav {
+.cid-cid-KJC .collapsed .navbar-collapse.collapsing .navbar-nav,
+.cid-cid-KJC .collapsed .navbar-collapse.show .navbar-nav {
   display: block;
   text-align: center;
 }
-.cid-KJC .collapsed .navbar-collapse.collapsing .navbar-nav .nav-item,
-.cid-KJC .collapsed .navbar-collapse.show .navbar-nav .nav-item {
+.cid-cid-KJC .collapsed .navbar-collapse.collapsing .navbar-nav .nav-item,
+.cid-cid-KJC .collapsed .navbar-collapse.show .navbar-nav .nav-item {
   clear: both;
 }
-.cid-KJC .collapsed .navbar-collapse.collapsing .navbar-buttons,
-.cid-KJC .collapsed .navbar-collapse.show .navbar-buttons {
+.cid-cid-KJC .collapsed .navbar-collapse.collapsing .navbar-buttons,
+.cid-cid-KJC .collapsed .navbar-collapse.show .navbar-buttons {
   text-align: center;
 }
-.cid-KJC .collapsed .navbar-collapse.collapsing .navbar-buttons:last-child,
-.cid-KJC .collapsed .navbar-collapse.show .navbar-buttons:last-child {
+.cid-cid-KJC .collapsed .navbar-collapse.collapsing .navbar-buttons:last-child,
+.cid-cid-KJC .collapsed .navbar-collapse.show .navbar-buttons:last-child {
   margin-bottom: 1rem;
 }
-.cid-KJC .collapsed button.navbar-toggler {
+.cid-cid-KJC .collapsed button.navbar-toggler {
   display: block;
 }
-.cid-KJC .collapsed .navbar-brand {
+.cid-cid-KJC .collapsed .navbar-brand {
   margin-left: 1rem !important;
 }
-.cid-KJC .collapsed .navbar-toggleable-sm {
+.cid-cid-KJC .collapsed .navbar-toggleable-sm {
   flex-direction: column;
   -webkit-flex-direction: column;
 }
-.cid-KJC .collapsed .dropdown .dropdown-menu {
+.cid-cid-KJC .collapsed .dropdown .dropdown-menu {
   width: 100%;
   text-align: center;
   position: relative;
@@ -2322,19 +2322,19 @@ body {
   transition-duration: .5s;
   transition-property: opacity,padding,height;
 }
-.cid-KJC .collapsed .dropdown.open > .dropdown-menu {
+.cid-cid-KJC .collapsed .dropdown.open > .dropdown-menu {
   position: relative;
   opacity: 1;
   height: auto;
   padding: 1.4rem 0;
   visibility: visible;
 }
-.cid-KJC .collapsed .dropdown .dropdown-submenu {
+.cid-cid-KJC .collapsed .dropdown .dropdown-submenu {
   left: 0;
   text-align: center;
   width: 100%;
 }
-.cid-KJC .collapsed .dropdown .dropdown-toggle[data-toggle="dropdown-submenu"]::after {
+.cid-cid-KJC .collapsed .dropdown .dropdown-toggle[data-toggle="dropdown-submenu"]::after {
   margin-top: 0;
   position: inherit;
   right: 0;
@@ -2350,51 +2350,51 @@ body {
   border-left: .30em solid transparent;
 }
 @media (max-width: 991px) {
-  .cid-KJC.navbar-expand {
+  .cid-cid-KJC.navbar-expand {
     flex-direction: column;
   }
-  .cid-KJC img {
+  .cid-cid-KJC img {
     height: 3.8rem !important;
   }
-  .cid-KJC .btn {
+  .cid-cid-KJC .btn {
     display: flex;
   }
-  .cid-KJC button.navbar-toggler {
+  .cid-cid-KJC button.navbar-toggler {
     display: block;
   }
-  .cid-KJC .navbar-brand {
+  .cid-cid-KJC .navbar-brand {
     margin-left: 1rem !important;
   }
-  .cid-KJC .navbar-toggleable-sm {
+  .cid-cid-KJC .navbar-toggleable-sm {
     flex-direction: column;
     -webkit-flex-direction: column;
   }
-  .cid-KJC .navbar-collapse {
+  .cid-cid-KJC .navbar-collapse {
     display: none !important;
     padding-right: 0 !important;
   }
-  .cid-KJC .navbar-collapse.collapsing,
-  .cid-KJC .navbar-collapse.show {
+  .cid-cid-KJC .navbar-collapse.collapsing,
+  .cid-cid-KJC .navbar-collapse.show {
     display: block !important;
   }
-  .cid-KJC .navbar-collapse.collapsing .navbar-nav,
-  .cid-KJC .navbar-collapse.show .navbar-nav {
+  .cid-cid-KJC .navbar-collapse.collapsing .navbar-nav,
+  .cid-cid-KJC .navbar-collapse.show .navbar-nav {
     display: block;
     text-align: center;
   }
-  .cid-KJC .navbar-collapse.collapsing .navbar-nav .nav-item,
-  .cid-KJC .navbar-collapse.show .navbar-nav .nav-item {
+  .cid-cid-KJC .navbar-collapse.collapsing .navbar-nav .nav-item,
+  .cid-cid-KJC .navbar-collapse.show .navbar-nav .nav-item {
     clear: both;
   }
-  .cid-KJC .navbar-collapse.collapsing .navbar-buttons,
-  .cid-KJC .navbar-collapse.show .navbar-buttons {
+  .cid-cid-KJC .navbar-collapse.collapsing .navbar-buttons,
+  .cid-cid-KJC .navbar-collapse.show .navbar-buttons {
     text-align: center;
   }
-  .cid-KJC .navbar-collapse.collapsing .navbar-buttons:last-child,
-  .cid-KJC .navbar-collapse.show .navbar-buttons:last-child {
+  .cid-cid-KJC .navbar-collapse.collapsing .navbar-buttons:last-child,
+  .cid-cid-KJC .navbar-collapse.show .navbar-buttons:last-child {
     margin-bottom: 1rem;
   }
-  .cid-KJC .dropdown .dropdown-menu {
+  .cid-cid-KJC .dropdown .dropdown-menu {
     width: 100%;
     text-align: center;
     position: relative;
@@ -2406,19 +2406,19 @@ body {
     transition-duration: .5s;
     transition-property: opacity,padding,height;
   }
-  .cid-KJC .dropdown.open > .dropdown-menu {
+  .cid-cid-KJC .dropdown.open > .dropdown-menu {
     position: relative;
     opacity: 1;
     height: auto;
     padding: 1.4rem 0;
     visibility: visible;
   }
-  .cid-KJC .dropdown .dropdown-submenu {
+  .cid-cid-KJC .dropdown .dropdown-submenu {
     left: 0;
     text-align: center;
     width: 100%;
   }
-  .cid-KJC .dropdown .dropdown-toggle[data-toggle="dropdown-submenu"]::after {
+  .cid-cid-KJC .dropdown .dropdown-toggle[data-toggle="dropdown-submenu"]::after {
     margin-top: 0;
     position: inherit;
     right: 0;
@@ -2435,15 +2435,15 @@ body {
   }
 }
 @media (min-width: 767px) {
-  .cid-KJC .menu-logo {
+  .cid-cid-KJC .menu-logo {
     flex-shrink: 0;
   }
 }
-.cid-KJC .navbar-collapse {
+.cid-cid-KJC .navbar-collapse {
   flex-basis: auto;
 }
-.cid-KJC .nav-link:hover,
-.cid-KJC .dropdown-item:hover {
+.cid-cid-KJC .nav-link:hover,
+.cid-cid-KJC .dropdown-item:hover {
   color: #767676 !important;
 }
 .cid-r6dBdHvMVY {
@@ -2452,22 +2452,22 @@ body {
   background-image: url("../../../assets/images/bg-yellow-2000x871.png");
 }
 @media (min-width: 992px) {
-  .cid-r6dBdHvMVY .kjc-figure {
+  .cid-r6dBdHvMVY .cid-KJC-figure {
     padding-right: 4rem;
   }
 }
 @media (max-width: 991px) {
-  .cid-r6dBdHvMVY .kjc-figure {
+  .cid-r6dBdHvMVY .cid-KJC-figure {
     padding-bottom: 3rem;
   }
 }
 @media (max-width: 767px) {
-  .cid-r6dBdHvMVY .kjc-text {
+  .cid-r6dBdHvMVY .cid-KJC-text {
     text-align: center;
   }
 }
-.cid-r6dBdHvMVY .kjc-text,
-.cid-r6dBdHvMVY .kjc-section-btn {
+.cid-r6dBdHvMVY .cid-KJC-text,
+.cid-r6dBdHvMVY .cid-KJC-section-btn {
   text-align: left;
   color: #073b4c;
 }
@@ -2511,7 +2511,7 @@ body {
 .cid-r6dEWXqEwT p {
   color: #767676;
 }
-.cid-r6dEWXqEwT .kjc-section-subtitle {
+.cid-r6dEWXqEwT .cid-KJC-section-subtitle {
   font-style: italic;
 }
 .cid-r6dEWXqEwT P {
@@ -2525,7 +2525,7 @@ body {
   padding-bottom: 0px;
   background-color: #efefef;
 }
-.cid-r6dRscoCdT .kjc-section-subtitle {
+.cid-r6dRscoCdT .cid-KJC-section-subtitle {
   color: #767676;
 }
 .cid-r6dRscoCdT .btn {
@@ -2610,7 +2610,7 @@ body {
 .cid-r6dVcSL35T p {
   color: #767676;
 }
-.cid-r6dVcSL35T .kjc-section-subtitle {
+.cid-r6dVcSL35T .cid-KJC-section-subtitle {
   color: #149dcc;
   font-weight: 300;
 }
@@ -2646,17 +2646,17 @@ body {
 .cid-r6dVcSL35T .card .card-header a.panel-title h4 .sign {
   padding-right: 1rem;
 }
-.cid-r6dVcSL35T .kjc-figure {
+.cid-r6dVcSL35T .cid-KJC-figure {
   align-self: flex-start;
   -webkit-align-self: flex-start;
 }
 @media (max-width: 991px) {
-  .cid-r6dVcSL35T .kjc-figure {
+  .cid-r6dVcSL35T .cid-KJC-figure {
     padding-top: 2rem;
   }
 }
 @media (min-width: 992px) {
-  .cid-r6dVcSL35T .kjc-figure {
+  .cid-r6dVcSL35T .cid-KJC-figure {
     padding-left: 4rem;
   }
 }
@@ -2746,7 +2746,7 @@ body {
   justify-content: flex-end;
   -webkit-justify-content: flex-end;
 }
-.cid-r6dJKRsrTV .media-container-row .social-list .kjc-iconfont-social {
+.cid-r6dJKRsrTV .media-container-row .social-list .cid-KJC-iconfont-social {
   font-size: 1.5rem;
   color: #ffffff;
 }
@@ -2866,7 +2866,7 @@ body {
   display: inline-flex;
   align-items: center;
 }
-.cid-r6iNqyw2lk .btn .kjc-iconfont {
+.cid-r6iNqyw2lk .btn .cid-KJC-iconfont {
   font-size: 1.6rem;
 }
 .cid-r6iNqyw2lk .menu-logo {
@@ -2899,7 +2899,7 @@ body {
 .cid-r6iNqyw2lk .menu-logo .navbar-brand .navbar-logo img {
   display: flex;
 }
-.cid-r6iNqyw2lk .menu-logo .navbar-brand .navbar-logo .kjc-iconfont {
+.cid-r6iNqyw2lk .menu-logo .navbar-brand .navbar-logo .cid-KJC-iconfont {
   transition: font-size 0.25s;
 }
 .cid-r6iNqyw2lk .navbar-toggleable-sm .navbar-collapse {
@@ -2967,7 +2967,7 @@ body {
   line-height: 2.5rem;
   transition: font-size 0.25s;
 }
-.cid-r6iNqyw2lk .navbar.navbar-short .navbar-logo a .kjc-iconfont {
+.cid-r6iNqyw2lk .navbar.navbar-short .navbar-logo a .cid-KJC-iconfont {
   font-size: 2.5rem !important;
 }
 .cid-r6iNqyw2lk .navbar.navbar-short .navbar-logo a img {
@@ -3231,7 +3231,7 @@ body {
 .cid-r6iPeCzsc4 .title {
   margin-bottom: 2rem;
 }
-.cid-r6iPeCzsc4 .kjc-section-subtitle {
+.cid-r6iPeCzsc4 .cid-KJC-section-subtitle {
   color: #767676;
 }
 .cid-r6iPeCzsc4 a:not([href]):not([tabindex]) {
@@ -3328,7 +3328,7 @@ body {
   justify-content: flex-end;
   -webkit-justify-content: flex-end;
 }
-.cid-r6iNqCY9Tk .media-container-row .social-list .kjc-iconfont-social {
+.cid-r6iNqCY9Tk .media-container-row .social-list .cid-KJC-iconfont-social {
   font-size: 1.5rem;
   color: #ffffff;
 }
@@ -3392,7 +3392,7 @@ body {
   display: inline-flex;
   align-items: center;
 }
-.cid-r6pn7qDPR7 .btn .kjc-iconfont {
+.cid-r6pn7qDPR7 .btn .cid-KJC-iconfont {
   font-size: 1.6rem;
 }
 .cid-r6pn7qDPR7 .menu-logo {
@@ -3425,7 +3425,7 @@ body {
 .cid-r6pn7qDPR7 .menu-logo .navbar-brand .navbar-logo img {
   display: flex;
 }
-.cid-r6pn7qDPR7 .menu-logo .navbar-brand .navbar-logo .kjc-iconfont {
+.cid-r6pn7qDPR7 .menu-logo .navbar-brand .navbar-logo .cid-KJC-iconfont {
   transition: font-size 0.25s;
 }
 .cid-r6pn7qDPR7 .navbar-toggleable-sm .navbar-collapse {
@@ -3493,7 +3493,7 @@ body {
   line-height: 2.5rem;
   transition: font-size 0.25s;
 }
-.cid-r6pn7qDPR7 .navbar.navbar-short .navbar-logo a .kjc-iconfont {
+.cid-r6pn7qDPR7 .navbar.navbar-short .navbar-logo a .cid-KJC-iconfont {
   font-size: 2.5rem !important;
 }
 .cid-r6pn7qDPR7 .navbar.navbar-short .navbar-logo a img {
@@ -3754,7 +3754,7 @@ body {
   padding-bottom: 30px;
   background-color: #ffffff;
 }
-.cid-r6pncU5MIb .kjc-section-subtitle {
+.cid-r6pncU5MIb .cid-KJC-section-subtitle {
   color: #767676;
   font-weight: 300;
 }
@@ -3914,7 +3914,7 @@ body {
   justify-content: flex-end;
   -webkit-justify-content: flex-end;
 }
-.cid-r6pn7sL4m5 .media-container-row .social-list .kjc-iconfont-social {
+.cid-r6pn7sL4m5 .media-container-row .social-list .cid-KJC-iconfont-social {
   font-size: 1.5rem;
   color: #ffffff;
 }
@@ -3948,7 +3948,7 @@ body {
   padding-bottom: 90px;
   background-color: #ffffff;
 }
-.cid-r6pEDy38r0 .kjc-section-subtitle {
+.cid-r6pEDy38r0 .cid-KJC-section-subtitle {
   color: #767676;
   font-weight: 300;
 }
@@ -4065,7 +4065,7 @@ body {
   display: inline-flex;
   align-items: center;
 }
-.cid-r6pPH7uvmR .btn .kjc-iconfont {
+.cid-r6pPH7uvmR .btn .cid-KJC-iconfont {
   font-size: 1.6rem;
 }
 .cid-r6pPH7uvmR .menu-logo {
@@ -4098,7 +4098,7 @@ body {
 .cid-r6pPH7uvmR .menu-logo .navbar-brand .navbar-logo img {
   display: flex;
 }
-.cid-r6pPH7uvmR .menu-logo .navbar-brand .navbar-logo .kjc-iconfont {
+.cid-r6pPH7uvmR .menu-logo .navbar-brand .navbar-logo .cid-KJC-iconfont {
   transition: font-size 0.25s;
 }
 .cid-r6pPH7uvmR .navbar-toggleable-sm .navbar-collapse {
@@ -4166,7 +4166,7 @@ body {
   line-height: 2.5rem;
   transition: font-size 0.25s;
 }
-.cid-r6pPH7uvmR .navbar.navbar-short .navbar-logo a .kjc-iconfont {
+.cid-r6pPH7uvmR .navbar.navbar-short .navbar-logo a .cid-KJC-iconfont {
   font-size: 2.5rem !important;
 }
 .cid-r6pPH7uvmR .navbar.navbar-short .navbar-logo a img {
