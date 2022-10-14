@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="description" content="">
-  <title>Home</title
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css">
   
   
   
@@ -28,7 +29,7 @@
             <div class="navbar-brand">
                 <span class="navbar-logo">
                     <a href="#top">
-                        <img src="images/magicyugioh.jpg" alt="Trading Card Boxes!" title="Trading Cards Boxes!" style="height: 8rem;">
+                        <img src="assets/images/placeholder.png" alt="Trading Cards Monthly" title="Trading Cards Monthly" style="height: 8rem;">
                     </a>
                 </span>
                 
@@ -50,7 +51,7 @@
     <div class="container">
         <div class="media-container-row">
             <div class="kjc-figure" style="width: 100%;">
-                <img src="images/box.jpg" alt="Trading Card Box" title="">
+                <img src="assets/images/placeholder.jpeg" alt="Trading Card Box" title="">
             </div>
 
             <div class="media-content">
@@ -58,7 +59,7 @@
                 
                 <div class="kjc-section-text kjc-white pb-3 ">
                     <p class="kjc-text kjc-fonts-style display-5">
-                        Trading Cards box is a monthly! subscription service that delivers sealed packs of trading cards to your Doorstep!
+                        Trading Cards box is a monthly subscription service that delivers sealed packs of trading cards to your Doorstep!
                     </p>
                 </div>
                 <div class="kjc-section-btn"><a class="btn btn-md btn-primary display-4" href="index.html#header9-3">LEARN MORE</a>
@@ -76,7 +77,7 @@
     <div class="container">
         <div class="inner-container" style="width: 66%;">
             <hr class="line" style="width: 25%;">
-            <div class="section-text align-center kjc-white kjc-fonts-style display-5">Trading Cards Boxes! will deliver directly to your door every month! &nbsp;We'll include factory sealed packs of cards, Rare finds worth their value.</div>
+            <div class="section-text align-center kjc-white kjc-fonts-style display-5">Trading Cards Monthly will deliver directly to your door every month! &nbsp;We'll include factory sealed packs of cards, Rare finds worth their value.</div>
             <hr class="line" style="width: 25%;">
         </div>
     </div>
@@ -151,7 +152,7 @@
             </div>
             <div class="row row-copirayt">
                 <p class="kjc-text mb-0 kjc-fonts-style kjc-white align-center display-7">
-                    © Copyright 2022 Trading Card Box - All Rights Reserved
+                    © Copyright 2022 Trading Cards Monthly - All Rights Reserved
                 </p>
             </div>
         </div>
@@ -160,15 +161,15 @@
 
 
   <script src="js/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/dropdown/js/script.min.js"></script>
-  <script src="assets/parallax/jarallax.min.js"></script>
-  <script src="assets/kjc-switch-arrow/kjc-switch-arrow.js"></script>
-  <script src="assets/sociallikes/social-likes.js"></script>
-  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="assets/theme/js/script.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/script.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/kjc-switch-arrow.js"></script>
+  <script src="js/social-likes.js"></script>
+  <script src="js/jquery.touch-swipe.min.js"></script>
+  <script src="js/script.js"></script>
   
   
 </body>
