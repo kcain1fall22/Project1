@@ -145,12 +145,12 @@
 
         $('html').addClass($.isMobile() ? 'mobile' : 'desktop');
 
-        // .cid-KJC-navbar--sticky
+        // .cid-kjc-navbar--sticky
         $(window).scroll(function() {
-            $('.cid-KJC-navbar--sticky').each(function() {
+            $('.cid-kjc-navbar--sticky').each(function() {
                 var method = $(window).scrollTop() > 10 ? 'addClass' : 'removeClass';
-                $(this)[method]('cid-KJC-navbar--stuck')
-                    .not('.cid-KJC-navbar--open')[method]('cid-KJC-navbar--short');
+                $(this)[method]('cid-kjc-navbar--stuck')
+                    .not('.cid-kjc-navbar--open')[method]('cid-kjc-navbar--short');
             });
         });
 
@@ -162,28 +162,28 @@
                     var windowHeight = $(window).height();
                     if ($.inArray(windowHeight, deviceSize) < 0)
                         windowHeight = deviceSize[$(window).width() > windowHeight ? 1 : 0];
-                    $('.cid-KJC-section--full-height').css('height', windowHeight + 'px');
+                    $('.cid-kjc-section--full-height').css('height', windowHeight + 'px');
                 });
             })($(window).width(), $(window).height());
-        } else if (!isSupportViewportUnits) { // fallback for .cid-KJC-section--full-height
+        } else if (!isSupportViewportUnits) { // fallback for .cid-kjc-section--full-height
             $(window).smartresize(function() {
-                $('.cid-KJC-section--full-height').css('height', $(window).height() + 'px');
+                $('.cid-kjc-section--full-height').css('height', $(window).height() + 'px');
             });
             $(document).on('add.cards', function(event) {
-                if ($('html').hasClass('cid-KJC-site-loaded') && $(event.target).outerFind('.cid-KJC-section--full-height').length)
+                if ($('html').hasClass('cid-kjc-site-loaded') && $(event.target).outerFind('.cid-kjc-section--full-height').length)
                     $(window).resize();
             });
         }
 
-        // .cid-KJC-section--16by9 (16 by 9 blocks autoheight)
+        // .cid-kjc-section--16by9 (16 by 9 blocks autoheight)
         function calculate16by9() {
             $(this).css('height', $(this).parent().width() * 9 / 16);
         }
         $(window).smartresize(function() {
-            $('.cid-KJC-section--16by9').each(calculate16by9);
+            $('.cid-kjc-section--16by9').each(calculate16by9);
         });
         $(document).on('add.cards changeParameter.cards', function(event) {
-            var enabled = $(event.target).outerFind('.cid-KJC-section--16by9');
+            var enabled = $(event.target).outerFind('.cid-kjc-section--16by9');
             if (enabled.length) {
                 enabled
                     .attr('data-16by9', 'true')
@@ -195,10 +195,10 @@
             }
         });
 
-        // .cid-KJC-parallax-background
+        // .cid-kjc-parallax-background
         function initParallax(card) {
             setTimeout(function() {
-                $(card).outerFind('.cid-KJC-parallax-background')
+                $(card).outerFind('.cid-kjc-parallax-background')
                     .jarallax({
                         speed: 0.6
                     })
@@ -213,7 +213,7 @@
         if ($.fn.jarallax && !$.isMobile()) {
             $(window).on('update.parallax', function(event) {
                 setTimeout(function() {
-                    var $jarallax = $('.cid-KJC-parallax-background');
+                    var $jarallax = $('.cid-kjc-parallax-background');
 
                     $jarallax.jarallax('coverImage');
                     $jarallax.jarallax('clipContainer');
@@ -261,7 +261,7 @@
             });
         }
 
-        // .cid-KJC-fixed-top
+        // .cid-kjc-fixed-top
         var fixedTopTimeout, scrollTimeout, prevScrollTop = 0,
             fixedTop = null,
             isDesktop = !$.isMobile();
@@ -297,7 +297,7 @@
                     fixedTop.fixed = false;
                     $(fixedTop.elm).removeClass('is-fixed');
                 }
-                $('.cid-KJC-fixed-top:first').each(function() {
+                $('.cid-kjc-fixed-top:first').each(function() {
                     fixedTop = {
                         breakPoint: $(this).offset().top + $(this).height() * 3,
                         fixed: false,
@@ -310,7 +310,7 @@
 
         // embedded videos
         $(window).smartresize(function() {
-            $('.cid-KJC-embedded-video').each(function() {
+            $('.cid-kjc-embedded-video').each(function() {
                 $(this).height(
                     $(this).width() *
                     parseInt($(this).attr('height') || 315) /
@@ -319,7 +319,7 @@
             });
         });
         $(document).on('add.cards', function(event) {
-            if ($('html').hasClass('cid-KJC-site-loaded') && $(event.target).outerFind('iframe').length)
+            if ($('html').hasClass('cid-kjc-site-loaded') && $(event.target).outerFind('iframe').length)
                 $(window).resize();
         });
 
@@ -329,7 +329,7 @@
                 var videoURL = $(this).attr('data-bg-video');
                 var parsedUrl = videoURL.match(/(http:\/\/|https:\/\/|)?(player.|www.)?(vimeo\.com|youtu(be\.com|\.be|be\.googleapis\.com))\/(video\/|embed\/|watch\?v=|v\/)?([A-Za-z0-9._%-]*)(&\S+)?/);
 
-                var $img = $('<div class="cid-KJC-background-video-preview">')
+                var $img = $('<div class="cid-kjc-background-video-preview">')
                     .hide()
                     .css({
                         backgroundSize: 'cover',
@@ -369,7 +369,7 @@
                         }).attr('src', previewURL);
 
                         if ($.fn.YTPlayer && !isBuilder && !$.isMobile()) {
-                            $('> *:eq(1)', this).before('<div class="cid-KJC-background-video"></div>').prev()
+                            $('> *:eq(1)', this).before('<div class="cid-kjc-background-video"></div>').prev()
                                 .YTPlayer({
                                     videoURL: parsedUrl[6],
                                     containment: 'self',
@@ -397,7 +397,7 @@
                         request = null;
 
                         if ($.fn.vimeo_player && !isBuilder && !$.isMobile()) {
-                            $('> *:eq(1)', this).before('<div class="cid-KJC-background-video"></div>').prev()
+                            $('> *:eq(1)', this).before('<div class="cid-kjc-background-video"></div>').prev()
                                 .vimeo_player({
                                     videoURL: videoURL,
                                     containment: 'self',
@@ -425,14 +425,14 @@
             if (paramName === 'bg') {
                 switch (key) {
                     case 'type':
-                        $(event.target).find('.cid-KJC-background-video-preview').remove();
+                        $(event.target).find('.cid-kjc-background-video-preview').remove();
                         if (value.type === 'video') {
                             videoParser(event.target);
                         }
                         break;
                     case 'value':
                         if (value.type === 'video') {
-                            $(event.target).find('.cid-KJC-background-video-preview').remove();
+                            $(event.target).find('.cid-kjc-background-video-preview').remove();
                             videoParser(event.target);
                         }
                         break;
@@ -444,7 +444,7 @@
         if (!isBuilder) {
             $('body > *:not(style, script)').trigger('add.cards');
         }
-        $('html').addClass('cid-KJC-site-loaded');
+        $('html').addClass('cid-kjc-site-loaded');
         $(window).resize().scroll();
 
         // smooth scroll
@@ -462,7 +462,7 @@
                             $(useBody ? 'body' : target.hash).each(function() {
                                 e.preventDefault();
                                 // in css sticky navbar has height 64px
-                                // var stickyMenuHeight = $('.cid-KJC-navbar--sticky').length ? 64 : 0;
+                                // var stickyMenuHeight = $('.cid-kjc-navbar--sticky').length ? 64 : 0;
                                 var stickyMenuHeight = $(target).parents().hasClass('navbar-fixed-top') ? 60 : 0;
                                 var goTo = target.hash == '#bottom' ? ($(this).height() - $(window).height()) : ($(this).offset().top - stickyMenuHeight);
                                 // Disable Accordion's and Tab's scroll
@@ -483,7 +483,7 @@
         }
 
         // init the same height columns
-        $('.cols-same-height .cid-KJC-figure').each(function() {
+        $('.cols-same-height .cid-kjc-figure').each(function() {
             var $imageCont = $(this);
             var $img = $imageCont.children('img');
             var $cont = $imageCont.parent();
@@ -534,10 +534,10 @@
 
 
     if (!isBuilder) {
-        // .cid-KJC-social-likes
+        // .cid-kjc-social-likes
         if ($.fn.socialLikes) {
             $(document).on('add.cards', function(event) {
-                $(event.target).outerFind('.cid-KJC-social-likes').on('counter.social-likes', function(event, service, counter) {
+                $(event.target).outerFind('.cid-kjc-social-likes').on('counter.social-likes', function(event, service, counter) {
                     if (counter > 999) $('.social-likes__counter', event.target).html(Math.floor(counter / 1000) + 'k');
                 }).socialLikes({
                     initHtml: false
@@ -546,7 +546,7 @@
         }
 
         $(document).on('add.cards', function(event) {
-            if ($(event.target).hasClass('cid-KJC-reveal')) {
+            if ($(event.target).hasClass('cid-kjc-reveal')) {
                 $(event.target).footerReveal();
             }
         });
@@ -559,8 +559,8 @@
             } else if ($('input[name=animation]').length) {
                 $('input[name=animation]').remove();
 
-                var $animatedElements = $('p, h1, h2, h3, h4, h5, a, button, small, img, li, blockquote, .cid-KJC-author-name, em, label, input, textarea, .input-group, .iconbox, .btn-social, .cid-KJC-figure, .cid-KJC-map, .cid-KJC-testimonial .card-block, .cid-KJC-price-value, .cid-KJC-price-figure, .dataTable, .dataTables_info').not(function() {
-                    return $(this).parents().is('.navbar, .cid-KJC-arrow, footer, .iconbox, .cid-KJC-slider, .cid-KJC-gallery, .cid-KJC-testimonial .card-block, #cookiesdirective, .cid-KJC-wowslider, .accordion, .tab-content, .engine, #scrollToTop');
+                var $animatedElements = $('p, h1, h2, h3, h4, h5, a, button, small, img, li, blockquote, .cid-kjc-author-name, em, label, input, textarea, .input-group, .iconbox, .btn-social, .cid-kjc-figure, .cid-kjc-map, .cid-kjc-testimonial .card-block, .cid-kjc-price-value, .cid-kjc-price-figure, .dataTable, .dataTables_info').not(function() {
+                    return $(this).parents().is('.navbar, .cid-kjc-arrow, footer, .iconbox, .cid-kjc-slider, .cid-kjc-gallery, .cid-kjc-testimonial .card-block, #cookiesdirective, .cid-kjc-wowslider, .accordion, .tab-content, .engine, #scrollToTop');
                 }).addClass('hidden animated');
 
                 function getElementOffset(element) {
@@ -614,7 +614,7 @@
 
     // Scroll to Top Button
     $(document).ready(function() {
-        if ($('.cid-KJC-arrow-up').length) {
+        if ($('.cid-kjc-arrow-up').length) {
             var $scroller = $('#scrollToTop'),
                 $main = $('body,html'),
                 $window = $(window);
@@ -637,7 +637,7 @@
 
     // arrow down
     if (!isBuilder) {
-        $('.cid-KJC-arrow').on('click', function(e) {
+        $('.cid-kjc-arrow').on('click', function(e) {
             var $next = $(e.target).closest('section').next();
             if($next.hasClass('engine')){
                 $next = $next.closest('section').next();
@@ -652,7 +652,7 @@
     // add padding to the first element, if it exists
     if ($('nav.navbar').length) {
         var navHeight = $('nav.navbar').height();
-        $('.cid-KJC-after-navbar.cid-KJC-fullscreen').css('padding-top', navHeight + 'px');
+        $('.cid-kjc-after-navbar.cid-kjc-fullscreen').css('padding-top', navHeight + 'px');
     }
 
     function isIE() {
@@ -671,7 +671,7 @@
         $(document).on('add.cards', function(event) {
             var $eventTarget = $(event.target);
 
-            if ($eventTarget.hasClass('cid-KJC-fullscreen')) {
+            if ($eventTarget.hasClass('cid-kjc-fullscreen')) {
                 $(window).on('load resize', function() {
                     $eventTarget.css('height', 'auto');
 
@@ -681,13 +681,13 @@
                 });
             }
 
-            if ($eventTarget.hasClass('cid-KJC-slider') || $eventTarget.hasClass('cid-KJC-gallery')) {
+            if ($eventTarget.hasClass('cid-kjc-slider') || $eventTarget.hasClass('cid-kjc-gallery')) {
                 $eventTarget.find('.carousel-indicators').addClass('ie-fix').find('li').css({
                     display: 'inline-block',
                     width: '30px'
                 });
 
-                if ($eventTarget.hasClass('cid-KJC-slider')) {
+                if ($eventTarget.hasClass('cid-kjc-slider')) {
                     $eventTarget.find('.full-screen .slider-fullscreen-image').css('height', '1px');
                 }
             }
@@ -945,20 +945,20 @@
                 if (!$iscollapsing.hasClass('collapsing')) {
                     if ($id.indexOf('toggle') != -1){
                         if ($(this).hasClass('collapsed')) {
-                            $(this).find('span.sign').removeClass('cid-KJC-arrow-down').addClass('cid-KJC-arrow-up'); 
+                            $(this).find('span.sign').removeClass('cid-kjc-arrow-down').addClass('cid-kjc-arrow-up'); 
                         }
                         else{
-                            $(this).find('span.sign').removeClass('cid-KJC-arrow-up').addClass('cid-KJC-arrow-down'); 
+                            $(this).find('span.sign').removeClass('cid-kjc-arrow-up').addClass('cid-kjc-arrow-down'); 
                         }
                     }
                     else if ($id.indexOf('accordion')!=-1) {
                         var $accordion =  $(this).closest('.accordionStyles ');
                     
                         $accordion.children('.card').each(function() {
-                            $(this).find('span.sign').removeClass('cid-KJC-arrow-up').addClass('cid-KJC-arrow-down'); 
+                            $(this).find('span.sign').removeClass('cid-kjc-arrow-up').addClass('cid-kjc-arrow-down'); 
                         });
                         if ($(this).hasClass('collapsed')) {
-                            $(this).find('span.sign').removeClass('cid-KJC-arrow-down').addClass('cid-KJC-arrow-up'); 
+                            $(this).find('span.sign').removeClass('cid-kjc-arrow-down').addClass('cid-kjc-arrow-up'); 
                         }
                     }
                 }
@@ -970,8 +970,8 @@
         }
         
         // Fix for slider bug
-        if($('.cid-KJC-slider.carousel').length!=0){
-            $('.cid-KJC-slider.carousel').each(function(){
+        if($('.cid-kjc-slider.carousel').length!=0){
+            $('.cid-kjc-slider.carousel').each(function(){
                 var $slider = $(this),
                     controls = $slider.find('.carousel-control'),
                     indicators = $slider.find('carousel-indicators li');
