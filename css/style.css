@@ -143,10 +143,8 @@ input[type=checkbox]{
 }
 
 @media (max-width: 768px)
-.display-2 {
-  
-}
-.display-2 {
+{
+  .display-2 {
   font-family: 'Rubik', sans-serif;
   font-size: 3rem;
   line-height: 1.3;
@@ -158,4 +156,5 @@ input[type=checkbox]{
   word-wrap: break-word;
   padding-bottom: 1rem!important;
   color: #61ff83;
+}
 }
