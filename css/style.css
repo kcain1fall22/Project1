@@ -167,7 +167,9 @@ input[type=checkbox]{
 }
 @media only screen and (min-width: 320px) {
   h3 { font: normal 1.7em/2.1em Helvetica, sans-serif; }
+  .display-2 {color:aqua}
 }
 @media only screen and (min-width: 600px) {
   h3 { font-size: 2.2em; }
+  .display-2 {color:aqua}
 }
